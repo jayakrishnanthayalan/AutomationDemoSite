@@ -24,7 +24,7 @@ public class AccountCreationSteps {
         String CreateAccountMsg=accountPage.VerifyCreateAccount();
         System.out.println("Expected text: CREATE ACCOUNT");
         System.out.println("Actual text: "+CreateAccountMsg);
-        Assert.assertTrue(CreateAccountMsg.contains("CREATE ACCOUNT"), "User is not on Account Creation page");
+        Assert.assertTrue(CreateAccountMsg.contains("CREATE ACCOUNT"), "User is not on Account Creation pages");
     }
 
     @When("the user enters valid account details")
